@@ -2,17 +2,11 @@ name: GIPHY generator
 
 on:
   issues:
-    types:
-      - opened
-      - edited
+    types: [opened, edited]
   pull_request:
-    types:
-      - opened
-      - edited
+    types: [opened, edited]
   issue_comment:
-    types:
-      - created
-      - edited
+    types: [created, edited]
 
 jobs:
   giphy-generator:
@@ -25,6 +19,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
         with:
-          rating: "g"
-          lang: "en"
+          rating: 'g'
+          lang: 'en'
 
