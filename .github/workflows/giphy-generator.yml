@@ -20,12 +20,11 @@ jobs:
 
     steps:
       - name: GIPHY Generator
-        run: echo "Run GIPHY"
- #       uses: IAmHughes/giphy-generator@v1.0.0
-  #      env:
-  #        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-   #       GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
-   #     with:
-    #      rating: "g"
-    #      lang: "en"
+        uses: IAmHughes/giphy-generator@v1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
+        with:
+          rating: "g"
+          lang: "en"
 
