@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: GIPHY Generator
-        command: echo "Run GIPHY"
+        run: echo "Run GIPHY"
  #       uses: IAmHughes/giphy-generator@v1.0.0
   #      env:
   #        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
